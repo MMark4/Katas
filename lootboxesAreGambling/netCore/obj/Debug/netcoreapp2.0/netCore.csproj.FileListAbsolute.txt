@@ -1,0 +1,10 @@
+C:\repos\Katas\lootboxesAreGambling\netCore\bin\Debug\netcoreapp2.0\netCore.deps.json
+C:\repos\Katas\lootboxesAreGambling\netCore\bin\Debug\netcoreapp2.0\netCore.runtimeconfig.json
+C:\repos\Katas\lootboxesAreGambling\netCore\bin\Debug\netcoreapp2.0\netCore.runtimeconfig.dev.json
+C:\repos\Katas\lootboxesAreGambling\netCore\bin\Debug\netcoreapp2.0\netCore.dll
+C:\repos\Katas\lootboxesAreGambling\netCore\bin\Debug\netcoreapp2.0\netCore.pdb
+C:\repos\Katas\lootboxesAreGambling\netCore\obj\Debug\netcoreapp2.0\netCore.csproj.CoreCompileInputs.cache
+C:\repos\Katas\lootboxesAreGambling\netCore\obj\Debug\netcoreapp2.0\netCore.AssemblyInfoInputs.cache
+C:\repos\Katas\lootboxesAreGambling\netCore\obj\Debug\netcoreapp2.0\netCore.AssemblyInfo.cs
+C:\repos\Katas\lootboxesAreGambling\netCore\obj\Debug\netcoreapp2.0\netCore.dll
+C:\repos\Katas\lootboxesAreGambling\netCore\obj\Debug\netcoreapp2.0\netCore.pdb

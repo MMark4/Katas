@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<h1>Dice Game</h1>
+
+<body>
+    <form method="post">
+        <h4>May the odds be with you</h4>
+        <hr />
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Beaker.FaceCount"></label>
+            <input asp-for="Beaker.FaceCount" class="form-control">
+            <span asp-validation-for="Beaker.FaceCount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Beaker.DiceCount"></label>
+            <input asp-for="Beaker.DiceCount" class="form-control">
+            <span asp-validation-for="Beaker.DiceCount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => Model.SelectedPlayer, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-5">
+                 @Html.DropDownListFor(x => Model.SelectedPlayer, new SelectList(Model.ExistantPlayers, "Value", "Text")) 
+                 @Html.ValidationMessageFor(x => x.SelectedPlayer, "", new { @class = "text-danger" }) 
+            </div>
+
+        </div>
+    </form>
+    
+</body>
+
