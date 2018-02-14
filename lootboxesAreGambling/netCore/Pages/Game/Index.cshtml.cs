@@ -12,21 +12,30 @@
 
     public class IndexModel : PageModel
     {
+        public IndexModel()
+        {
+            Dices = Beaker.Dices.Select(o => o.Faces).ToList();
+            Results = new List<int>();
+        }
+
         [Required]
         [BindProperty]
-        public Beaker Beaker {get; set;}
+        public Dice Dice {get; set;}
 
-        [Required]
-        [Display(Name = "SelectedPlayer")]
-        public string SelectedPlayer { get; set; }
-        public IEnumerable<SelectListItem> ExistantPlayers {get;set;}
+         public IEnumerable<int> Results { get; set; }
 
-        public void OnGet()
+        public IEnumerable<int> Dices {get; set;}
+
+        public void OnPostPostDice ()
         {
+            Beaker.addDice(Dice);
         }
 
-        public void OnPostBeaker()
+        public void OnPostRoll()
         {
+            Results = Beaker.rollDices();
         }
+
+
     }
 }

@@ -1,9 +1,27 @@
+using System;
+using System.Collections.Generic;
+
 namespace netCore.Models
 {
-    public class Beaker
+    public static class Beaker
     {
-        public int FaceCount { get; set; }
+        public static List<Dice> Dices  = new List<Dice>();
 
-        public int DiceCount { get; set; }
+        public static Random rand = new Random();
+
+        public static void addDice(Dice dice)
+        {
+            Dices.Add(dice);
+        }
+
+        public static List<int> rollDices()
+        {
+            List<int> results = new List<int>();
+
+            Dices.ForEach(dice =>
+                            results.Add(rand.Next(dice.Faces) + 1));
+
+            return results;
+        }
     }
 }
